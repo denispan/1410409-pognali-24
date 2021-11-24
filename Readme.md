@@ -1,7 +1,7 @@
 # Личный проект «Погнали» 
 
 * Студент: [Денис Панкрашин](https://up.htmlacademy.ru/adaptive/24/user/1410409).
-* Наставник: `Неизвестно`.
+* Наставник: [Алексей Хабиров](https://htmlacademy.ru/profile/alex_khab).
 
 ---
 
