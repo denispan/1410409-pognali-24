@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Погнали</title>
+  </head>
+  <body class="page__body">
+
+    <header class="page__header header">
+      <a class="logo logo--header" href="index.html">
+        <img src="./img/header-logo_mobile.svg" width="96" height="15" alt="Логотип сайта Погнали">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть/закрыть меню</span>
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a href="#">О сервисе</a>
+            </li>
+            <li class="site-list__item">
+              <a href="form.html">Направления</a>
+            </li>
+            <li class="site-list__item">
+              <a href="catalog.html">Попутчики</a>
+            </li>
+          </ul>
+          <div class="main-nav__list user-list">
+            <a class="user-list__link" href="#">Авторизация</a>
+          </div>
+          <ul class="main-nav__list contacts-list">
+            <li class="contacts-list__item">
+              <a class="contacts-list__link" href="tel:88005558628">8 800 555-86-28</a>
+            </li>
+            <li class="contacts-list__item">
+              <a class="contacts-list__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            </li>
+          </ul>
+          <ul class="main-nav__list social-list">
+            <li class="social-list__item">
+              <a class="social-list__link" href="https://www.facebook.com/htmlacademy">
+                <span class="visually-hidden">Фейсбук</span>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a class="social-list__link" href="https://vk.com/htmlacademy">
+                <span class="visually-hidden">ВКонтакте</span>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a class="social-list__link" href="https://www.instagram.com/htmlacademy/">
+                <span class="visually-hidden">Инстаграм</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <h2 class="header__title">Погнали</h2>
+    </header>
+
+    <main class="page__main">
+      <h1 class="visually-hidden">Каталог попутчиков</h1>
+
+        <section class="country">
+
+          <img class="country__image" src="./img/icon_filter.svg" alt="Фильтр">
+          <h3 class="country__text">Фильтрация по странам:</h3>
+          <button class="country__toggle" type="button">
+            <span class="visually-hidden">Открыть/закрыть фильтр по странам</span>
+          </button>
+
+          <div class="filter-country">
+            <ul class="filter-country__main main-list">
+              <li class="main-list__item">
+                <a class="main-list__link main-list__link--active" href="europe">Европа</a>
+              </li>
+              <li class="main-list__item">
+                <a class="main-list__link" href="asia">Азия</a>
+              </li>
+              <li class="main-list__item">
+                <a class="main-list__link" href="usa">Америка</a>
+              </li>
+              <li class="main-list__item">
+                <a class="main-list__link" href="islands">Острова</a>
+              </li>
+            </ul>
+
+            <ul class="letter-list">
+              <li class="letter-list__item">
+                <button class="letter-list__button" type="button">а</button>
+              </li>
+              <li class="letter-list__item">
+                <button class="letter-list__button" type="button">б</button>
+              </li>
+            </ul>
+
+            <div class="filter-country__extend">
+              <ul class="extend-list extend-list--a">
+                <li class="extend-list__item">
+                  <a class="extend-list__link" href="#">Австралия</a>
+                </li>
+                <li class="extend-list__item">
+                  <a class="extend-list__link" href="#">Австрия</a>
+                </li>
+                <li class="extend-list__item">
+                  <a class="extend-list__link" href="#">Азербайджан</a>
+                </li>
+              </ul>
+              <ul class="extend-list extend-list--b">
+                <li class="extend-list__item">
+                  <a class="extend-list__link" href="#">Багамские Острова</a>
+                </li>
+                <li class="extend-list__item">
+                  <a class="extend-list__link" href="#">Бангладеш</a>
+                </li>
+                <li class="extend-list__item">
+                  <a class="extend-list__link" href="#">Барбадос</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <button class="button button--close" type="button">Свернуть</button>
+        </section>
+
+        <form class="filter-companions" action="https://echo.htmlacademy.ru" method="get">
+          <h3 class="filter-companions__title">Подберите идеального попутчика</h3>
+
+          <fieldset class="field">
+            <legend class="field__title">Хобби</legend>
+            <button class="field__toggle" type="button">
+              <span class="visually-hidden">Развернуть/свернуть список</span>
+              <img src="./img/icon_fieldset-toggle.svg" alt="Развернуть/свернуть">
+            </button>
+            <ul class="field__list">
+              <li>
+                <label class="control">
+                  <input class="visually-hidden" type="checkbox" name="hobby" value="gym" checked>
+                  <span class="control__mark"></span>
+                  <span class="control__label">Спортзал</span>
+                </label>
+              </li>
+              <li>
+                <label class="control">
+                  <input class="visually-hidden" type="checkbox" name="hobby" value="hookah" checked>
+                  <span class="control__mark"></span>
+                  <span class="control__label">Кальян</span>
+                </label>
+              </li>
+              <li>
+                <label class="control">
+                  <input class="visually-hidden" type="checkbox" name="hobby" value="sofa" checked>
+                  <span class="control__mark"></span>
+                  <span class="control__label">Диван</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="field">
+            <legend class="field__title">Музыка</legend>
+            <button class="field__toggle" type="button">
+              <span class="visually-hidden">Развернуть/свернуть список</span>
+              <img src="./img/icon_fieldset-toggle.svg" alt="Развернуть/свернуть">
+            </button>
+            <ul class="field__list">
+              <li>
+                <label class="control">
+                  <input class="visually-hidden" type="checkbox" name="music" value="hard-rock" checked>
+                  <span class="control__mark"></span>
+                  <span class="control__label">Тяжелый рок</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="field">
+            <legend class="field__title">Левел</legend>
+            <button class="field__toggle" type="button">
+              <span class="visually-hidden">Развернуть/свернуть список</span>
+              <img src="./img/icon_fieldset-toggle.svg" alt="Развернуть/свернуть">
+            </button>
+
+            <div class="field__list range">
+              <div class="range__inputs">
+                <label class="range__label">
+                  <span class="visually-hidden">Введите минимальный уровень</span>
+                  <input class="range__input" type="number" value="30" name="min-level">
+                </label>
+                <span class="range__splitter"><img src="./img/icon_range-splitter.svg" alt="#"></span>
+                <label class="range__label">
+                  <span class="visually-hidden">Введите максимальный уровень</span>
+                  <input class="range__input" type="number" value="100" name="max-level">
+                </label>
+              </div>
+
+              <div class="range__scale">
+                  <div class="range__bar">
+                    <button class="range__toggle range__toggle--min"  type="button">
+                      <span class="visually-hidden">Изменить минимальный уровень</span>
+                    </button>
+                    <button class="range__toggle range__toggle--max"  type="button">
+                      <span class="visually-hidden">Изменить максимальный уровень</span>
+                    </button>
+                  </div>
+              </div>
+            </div>
+
+          </fieldset>
+
+          <button class="button button--submit" type="submit">Показать</button>
+        </form>
+
+        <ul class="companions-list">
+          <li class="companions-list__item user">
+            <div class="user__avatar avatar">
+              <a href="#">
+                <img class="avatar__image" src="./img/avatar-firsova.jpg" width="70" height="70" alt="Таня Фирсова">
+              </a>
+            </div>
+            <a class="user__link" href="#">
+              <h3 class="user__name">Таня Фирсова</h3>
+            </a>
+            <div class="user__like like">
+              <button class="like__button" type="button">
+                <span class="visually-hidden">Лайкнуть</span>
+                <img src="./img/icon_heart-fill.svg" alt="Нравится">
+              </button>
+              <span class="like__count">1,5 м</span>
+            </div>
+
+            <ul class="user__tags-list tags-list">
+              <li class="tags-list__item">#ЗОЖ</li>
+              <li class="tags-list__item">#ПП</li>
+              <li class="tags-list__item">#Фитнес</li>
+              <li class="tags-list__item">#пляж</li>
+              <li class="tags-list__item">#авокадо</li>
+              <li class="tags-list__item">#смузи</li>
+            </ul>
+
+            <fieldset class="fieldset-user">
+              <legend class="fieldset-user__title">Хочет посетить:</legend>
+              <ul class="flags-list flags-list--catalog">
+                <li class="flags-list__item">
+                  <img class="flags-list__image" src="./img/flag-sri-lanka.png" width="26" height="18" alt="Флаг Шри-Ланки">
+                  <p class="flag-list__name">Шри-Ланка</p>
+                </li>
+                <li class="flags-list__item">
+                  <img class="flags-list__image" src="./img/flag-thailand.png" width="26" height="18" alt="Флаг Таиланда">
+                  <p class="flag-list__name">Таиланд</p>
+                </li>
+                <li class="flags-list__item">
+                  <img class="flags-list__image" src="./img/flag-seychelles.png" width="26" height="18" alt="Флаг Сейшельских Островов">
+                  <p class="flag-list__name">Сейшельские Острова</p>
+                </li>
+              </ul>
+            </fieldset>
+
+            <fieldset class="fieldset-user">
+              <legend class="fieldset-user__title">Транспорт:</legend>
+              <ul class="transport-list transport-list--catalog">
+                <li class="transport-list__item">
+                  <img class="icon--satisfied" src="./img/icon_plane.svg" width="21" height="21" alt="Предпочитает самолет">
+                </li>
+                <li class="transport-list__item">
+                  <img src="./img/icon_bus.svg" width="17" height="19" alt="Предпочитает автобус">
+                </li>
+                <li class="transport-list__item">
+                  <img src="./img/icon_bicycle.svg" width="24" height="24" alt="Предпочитает велосипед">
+                </li>
+                <li class="transport-list__item">
+                  <img src="./img/icon_run.svg" width="21" height="23" alt="Предпочитает гулять">
+                </li>
+              </ul>
+            </fieldset>
+
+            <fieldset class="fieldset-user">
+              <legend class="fieldset-user__title">Левел:</legend>
+              <p class="fieldset-user__level level">
+                <span class="level__number level__number--catalog">99</span>
+              </p>
+            </fieldset>
+
+            <a class="button button--call" href="#">Показать</a>
+
+          </li>
+
+        </ul>
+
+        <a class="button button--more" href="#">
+          <img src="./img/icon_plus-more.svg" alt="+">
+          <span>Показать еще</span>
+        </a>
+
+        <div class="pagination">
+          <a class="pagination__button pagination__button--prev" href="#">
+            <span class="visually-hidden">Предыдущая страница</span>
+            <img src="img/icon_page-arrows.svg" alt="вперед">
+          </a>
+          <a class="pagination__button pagination__button--next" href="#">
+            <span class="visually-hidden">Следующая страница</span>
+            <img src="img/icon_page-arrows.svg" alt="назад">
+          </a>
+        </div>
+
+    </main>
+
+
+
+    <footer class="page__footer">
+      <a href="index.html" class="logo logo--footer">
+        <img src="./img/footer-logo_mobile.svg" width="96" height="15" alt="Логотип сайта Погнали">
+      </a>
+
+      <ul class="social-list social-list--footer">
+        <li class="social-list__item">
+          <a href="https://www.facebook.com/htmlacademy">
+            <span class="visually-hidden">Фейсбук</span>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a href="https://vk.com/htmlacademy">
+            <span class="visually-hidden">ВКонтакте</span>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a href="https://www.instagram.com/htmlacademy/">
+            <span class="visually-hidden">Инстаграм</span>
+          </a>
+        </li>
+      </ul>
+
+      <div class="page-footer__copyright copyright">
+        <span class="copyright__text">Разработано</span>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <img src="./img/logo_html.svg" width="27" height="34" alt="Логотип html-academy">
+        </a>
+      </div>
+
+    </footer>
+
+  </body>
+</html>
