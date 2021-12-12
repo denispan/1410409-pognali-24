@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Погнали</title>
+    <link rel="stylesheet" href="./css/style.css">
   </head>
   <body class="page__body">
 
@@ -26,15 +27,15 @@
               <a href="catalog.html">Попутчики</a>
             </li>
           </ul>
-          <div class="main-nav__list user-list">
-            <a class="user-list__link" href="#">Авторизация</a>
+          <div class="main-nav__list button-login">
+            <a href="#">Авторизация</a>
           </div>
           <ul class="main-nav__list contacts-list">
             <li class="contacts-list__item">
-              <a class="contacts-list__link" href="tel:88005558628">8 800 555-86-28</a>
+              <a class="contacts-list__link contacts-list__link--main-nav" href="tel:88005558628">8 800 555-86-28</a>
             </li>
             <li class="contacts-list__item">
-              <a class="contacts-list__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+              <a class="contacts-list__link contacts-list__link--main-nav" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
             </li>
           </ul>
           <ul class="main-nav__list social-list">
@@ -62,11 +63,11 @@
       <h1 class="visually-hidden">Погнали? - удобный сервис по поиску попутчиков</h1>
 
       <section class="promo">
-
-          <h2 class="visually-hidden">Промо материал</h2>
+        <h2 class="visually-hidden">Промо материал</h2>
+        <div class="promo__wrapper">
           <p class="promo__slogan">В путешествие с крутыми попутчиками!</p>
 
-          <ul class="promo__list contacts-list contacts-list--promo">
+          <ul class="promo__contacts-list">
             <li class="contacts-list__item contacts-list__item--promo">
               <a class="contacts-list__link contacts-list__link--promo" href="tel:88005558628">
                 <span class="visually-hidden">Телефон: 88005558628</span>
@@ -79,15 +80,17 @@
             </li>
           </ul>
 
-          <div class="promo__list user-list user-list--promo">
-            <a class="user-list__link user-list__link--promo" href="#">Авторизация</a>
+          <div class="promo__list button-login button-login--promo">
+            <a href="#">Авторизация</a>
           </div>
+        </div>
 
-          <blockquote class="promo__review">
-            <p class="promo__quote">«Лучшее приложение, что я видел в жизни!»</p>
-            <cite class="promo__author">Мурат Эльтазин главный редактор газеты «гаджетлайф»</cite>
-          </blockquote>
+        <blockquote class="promo__review">
+          <p class="promo__quote">«Лучшее приложение, что я видел в жизни!»</p>
+          <cite class="promo__author">Мурат Эльтазин главный редактор газеты «гаджетлайф»</cite>
+        </blockquote>
 
+        <div class="promo__wrapper-list">
           <ol class="todo-list">
             <li class="todo-list__item">
               <p class="todo-list__text">Выберите направление</p>
@@ -102,22 +105,22 @@
               <p class="todo-list__text">Путешествуйте вместе!</p>
             </li>
           </ol>
-
+        </div>
       </section>
 
-      <section class="section about">
-        <h2 class="section-title">О сервисе</h2>
-        <p class="section-text">
+      <section class="section section--about">
+        <h2 class="section__title">О сервисе</h2>
+        <p class="section__text">
           Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих.
         </p>
-        <p class="section-text section-text--bold">
+        <p class="section__text section__text--bold">
           А если найдете кого-то близкого по духу — скорее зовите в совместный трип!
         </p>
       </section>
 
-      <section class="section directions">
-        <h2 class="section-title">Направления</h2>
-        <p class="section-text">
+      <section class="section section--directions">
+        <h2 class="section__title">Направления</h2>
+        <p class="section__text section__text--directions">
           Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.
         </p>
         <ul class="directions-list">
@@ -158,9 +161,9 @@
         <a class="button button--primary" href="form.html">Показать все</a>
       </section>
 
-      <section class="section companions">
-        <h2 class="section-title">Попутчики</h2>
-        <p class="section-text">
+      <section class="section section--companions">
+        <h2 class="section__title">Попутчики</h2>
+        <p class="section__text">
           Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут для хайкинга.
         </p>
         <p class="section__text section__text--bold">
@@ -177,51 +180,54 @@
                 level
               </p>
             </div>
-
-            <ul class="user__flags-list flags-list">
-              <li class="flags-list__item">
-                <img class="flags-list__image" src="./img/flag-sri-lanka.png" width="35" height="24" alt="Хочет посетить Шри-Ланку">
-              </li>
-              <li class="flags-list__item">
-                <img class="flags-list__image" src="./img/flag-thailand.png" width="35" height="24" alt="Хочет посетить Таиланд">
-              </li>
-              <li class="flags-list__item">
-                <img class="flags-list__image" src="./img/flag-seychelles.png" width="35" height="24" alt="Хочет посетить Сейшельские Острова">
-              </li>
-            </ul>
-            <a class="user__link" href="#">
-              <h3 class="user__name">Таня Фирсова</h3>
-            </a>
-            <ul class="user__tags-list tags-list">
-              <li class="tags-list__item">#ЗОЖ</li>
-              <li class="tags-list__item">#ПП</li>
-              <li class="tags-list__item">#Фитнес</li>
-              <li class="tags-list__item">#пляж</li>
-              <li class="tags-list__item">#авокадо</li>
-              <li class="tags-list__item">#смузи</li>
-            </ul>
-            <ul class="user__transport-list transport-list">
-              <li class="transport-list__item">
-                <img class="icon--satisfied" src="./img/icon_plane.svg" width="21" height="21" alt="Предпочитает самолет">
-              </li>
-              <li class="transport-list__item">
-                <img src="./img/icon_bus.svg" width="17" height="19" alt="Предпочитает автобус">
-              </li>
-              <li class="transport-list__item">
-                <img src="./img/icon_bicycle.svg" width="24" height="24" alt="Предпочитает велосипед">
-              </li>
-              <li class="transport-list__item">
-                <img src="./img/icon_run.svg" width="21" height="23" alt="Предпочитает гулять">
-              </li>
-            </ul>
+            <div class="user__description">
+              <ul class="user__flags-list flags-list">
+                <li class="flags-list__item">
+                  <img class="flags-list__image" src="./img/flag-sri-lanka.png" width="35" height="24" alt="Хочет посетить Шри-Ланку">
+                </li>
+                <li class="flags-list__item">
+                  <img class="flags-list__image" src="./img/flag-thailand.png" width="35" height="24" alt="Хочет посетить Таиланд">
+                </li>
+                <li class="flags-list__item">
+                  <img class="flags-list__image" src="./img/flag-seychelles.png" width="35" height="24" alt="Хочет посетить Сейшельские Острова">
+                </li>
+              </ul>
+              <a class="user__link" href="#">
+                <h3 class="user__name">Таня Фирсова</h3>
+              </a>
+              <ul class="user__tags-list tags-list">
+                <li class="tags-list__item">#ЗОЖ</li>
+                <li class="tags-list__item">#ПП</li>
+                <li class="tags-list__item">#Фитнес</li>
+                <li class="tags-list__item">#пляж</li>
+                <li class="tags-list__item">#авокадо</li>
+                <li class="tags-list__item">#смузи</li>
+              </ul>
+              <ul class="user__transport-list transport-list">
+                <li class="transport-list__item">
+                  <img class="icon icon--satisfied" src="./img/icon_plane.svg" width="21" height="21" alt="Предпочитает самолет">
+                </li>
+                <li class="transport-list__item">
+                  <img class="icon" src="./img/icon_bus.svg" width="17" height="19" alt="Предпочитает автобус">
+                </li>
+                <li class="transport-list__item">
+                  <img class="icon" src="./img/icon_bicycle.svg" width="24" height="24" alt="Предпочитает велосипед">
+                </li>
+                <li class="transport-list__item">
+                  <img class="icon" src="./img/icon_run.svg" width="21" height="23" alt="Предпочитает гулять">
+                </li>
+              </ul>
+            </div>
           </li>
           <li class="companions-list__item user">
             <div class="user__avatar avatar">
               <img class="avatar__image" src="./img/avatar-demin.jpg" width="270" height="270" alt="Петя Демин">
-              <p class="avatar__level">
-                <span class="avatar__level--number">80</span>
+              <p class="avatar__level level">
+                <span class="level__number">99</span>
                 level
               </p>
+            </div>
+            <div class="user__description">
               <ul class="user__flags-list flags-list">
                 <li class="flags-list__item">
                   <img class="flags-list__image" src="./img/flag-belgium.png" width="35" height="24" alt="Хочет посетить Бельгию">
@@ -230,50 +236,50 @@
                   <img class="flags-list__image" src="./img/flag-czech.png" width="35" height="24" alt="Хочет посетить Чехию">
                 </li>
               </ul>
+              <a class="user__link" href="#">
+                <h3 class="user__name">Петя Демин</h3>
+              </a>
+              <ul class="user__tags-list tags-list">
+                <li class="tags-list__item">#бургер</li>
+                <li class="tags-list__item">#бар</li>
+                <li class="tags-list__item">#футбол</li>
+                <li class="tags-list__item">#концерт</li>
+                <li class="tags-list__item">#крафт</li>
+              </ul>
+              <ul class="user__transport-list transport-list">
+                <li class="transport-list__item">
+                  <img class="icon icon--satisfied" src="./img/icon_plane.svg" width="21" height="21" alt="Предпочитает самолет">
+                </li>
+                <li class="transport-list__item">
+                  <img class="icon icon--satisfied" src="./img/icon_bus.svg" width="17" height="19" alt="Предпочитает автобус">
+                </li>
+                <li class="transport-list__item">
+                  <img class="icon" src="./img/icon_bicycle.svg" width="24" height="24" alt="Предпочитает велосипед">
+                </li>
+                <li class="transport-list__item">
+                  <img class="icon icon--satisfied" src="./img/icon_run.svg" width="21" height="23" alt="Предпочитает бегать">
+                </li>
+              </ul>
             </div>
-            <a class="user__link" href="#">
-              <h3 class="user__name">Петя Демин</h3>
-            </a>
-            <ul class="user__tags-list tags-list">
-              <li class="tags-list__item">#бургер</li>
-              <li class="tags-list__item">#бар</li>
-              <li class="tags-list__item">#футбол</li>
-              <li class="tags-list__item">#концерт</li>
-              <li class="tags-list__item">#крафт</li>
-            </ul>
-            <ul class="user__transport-list transport-list">
-              <li class="transport-list__item">
-                <img class="icon--satisfied" src="./img/icon_plane.svg" width="21" height="21" alt="Предпочитает самолет">
-              </li>
-              <li class="transport-list__item">
-                <img class="icon--satisfied" src="./img/icon_bus.svg" width="17" height="19" alt="Предпочитает автобус">
-              </li>
-              <li class="transport-list__item">
-                <img src="./img/icon_bicycle.svg" width="24" height="24" alt="Предпочитает велосипед">
-              </li>
-              <li class="transport-list__item">
-                <img class="icon--satisfied" src="./img/icon_run.svg" width="21" height="23" alt="Предпочитает бегать">
-              </li>
-            </ul>
           </li>
         </ul>
-        <a class="button button--primary" href="catalog.html">Показать все</a>
+        <a class="button button--primary" href="catalog.html">Показать всех</a>
       </section>
 
-      <section class="section tariffs">
-        <h2 class="section-title">Добавьте свой профиль</h2>
+      <section class="section section--tariffs-list">
+        <h2 class="section__title">Добавьте свой профиль</h2>
         <ol class="tariffs-list">
-          <li class="tariffs__item">
-            <p class="tariffs__description">Базовое размещение</p>
-            <p class="tariffs__price">Бесплатно</p>
+          <li class="tariffs-list__item">
+            <p class="tariffs-list__description">Базовое размещение</p>
+            <p class="tariffs-list__price">Бесплатно</p>
           </li>
-          <li class="tariffs__item">
-            <p class="tariffs__description">Вывод на первых позициях</p>
-            <p class="tariffs__price">99 руб./мес</p>
+          <li class="tariffs-list__item">
+            <p class="tariffs-list__description">Вывод на первых позициях</p>
+            <p class="tariffs-list__price">99 руб./мес</p>
           </li>
-          <li class="tariffs__item">
-            <p class="tariffs__description">Кастомный цвет карточки</p>
-            <p class="tariffs__price">59 руб./мес</p>
+          <li class="tariffs-list__item">
+            <p class="tariffs-list__description">Кастомный цвет карточки</p>
+            <p class="tariffs-list__price">59 руб./мес</p>
           </li>
         </ol>
         <a class="button button--secondary" href="#">
@@ -281,11 +287,12 @@
         </a>
       </section>
 
-      <section class="section feedback">
+      <section class="section section--feedback">
         <h2 class="visually-hidden">Обратная связь</h2>
-        <p class="section-title">Заинтересовались?</p>
-        <p class="section-text">
-          Зарегистрируйтесь, это быстро и бесплатно! Уже зарегистрированы? Тогда скорее <a class="link link--login" href="#">авторизуйтесь</a>.
+        <p class="section__title">Заинтересовались?</p>
+        <p class="section__text">
+          Зарегистрируйтесь, это быстро и бесплатно! Уже зарегистрированы? Тогда скорее
+          <a class="link link--login" href="#">авторизуйтесь</a>.
         </p>
         <form class="form form--login" action="https://echo.htmlacademy.ru/" method="post">
           <label class="visually-hidden" for="e-mail-login">Введите e-mail для авторизации</label>
@@ -295,29 +302,35 @@
             <img src="./img/button-submit.svg" width="12" height="14" alt="Авторизоваться">
           </button>
         </form>
-        <p class="section-text feedback--text">Остались вопросы? Мы с радостью на них ответим!</p>
+        <p class="section__text feedback--text">Остались вопросы? Мы с радостью на них ответим!</p>
 
-        <ul class="contact-list">
-          <li class="contact-list__item">
-            <a class="contact-list__link" href="tel:88005558628">8 800 555-86-28</a>
+        <ul class="contacts-list">
+          <li class="contacts-list__item">
+            <a class="contacts-list__link contacts-list__link--main" href="tel:88005558628">8 800 555-86-28</a>
           </li>
-          <li class="contact-list__item">
-            <a class="contact-list__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          <li class="contacts-list__item">
+            <a class="contacts-list__link contacts-list__link--main" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </li>
         </ul>
       </section>
 
-      <section class="section address">
+      <section class="section section--address">
         <h2 class="visually-hidden">Адрес</h2>
-        <p class="section-text">ул. Большая Конюшенная, 19/8</p>
+        <p class="section__text">ул. Большая Конюшенная, 19/8</p>
         <a class="button button--primary button--transparent" href="https://yandex.ru/maps/20728/korolev/?ll=37.835139%2C55.927007&mode=routes&rtext=55.921754%2C37.814497~55.921657%2C37.841362&rtt=auto&ruri=~&utm_source=main_stripe_big&z=14">Проложить маршрут</a>
-        <img class="address__image" src="./img/background_map.png" alt="Карта с адресом">
+
+      </section>
+
+      <section class="map">
+        <iframe
+          src="https://yandex.ru/map-widget/v1/?um=constructor%3A9e15c86cb3f89e4ac46705233cd19121960a725c128d6cf17ea8c583dd6c2457&amp;source=constructor" width="100%" height="490" frameborder="0">
+        </iframe>
       </section>
 
     </main>
 
     <footer class="page__footer">
-      <a href="index.html" class="logo logo--footer">
+      <a class="logo logo--footer" href="index.html">
         <img src="./img/footer-logo_mobile.svg" width="96" height="15" alt="Логотип сайта Погнали">
       </a>
 
@@ -348,8 +361,8 @@
 
     </footer>
 
-      <section class="modal">
-        <h2 class="modal__title section-title">Бизнес-тарифы</h2>
+    <section class="modal">
+        <h2 class="modal__title section__title">Бизнес-тарифы</h2>
         <ul class="modal__list tariffs-list">
           <li class="tariffs__item">
             <p class="tariffs__description">Реклама у блоггера</p>

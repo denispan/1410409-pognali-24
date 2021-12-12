@@ -1,1 +1,65 @@
-// Начните писать стили здесь
+/*global.html*/
+@use "global/global.scss";
+@use "global/fonts.scss";
+@use "global/visually-hidden.scss";
+
+/*index.html*/
+@use "blocks/page.scss";
+@use "blocks/logo.scss";
+@use "blocks/main-nav.scss";
+@use "blocks/site-list.scss";
+@use "blocks/button-login.scss";
+@use "blocks/contacts-list.scss";
+@use "blocks/social-list.scss";
+@use "blocks/promo.scss";
+@use "blocks/todo-list.scss";
+@use "blocks/section.scss";
+@use "blocks/about.scss";
+@use "blocks/directions.scss";
+@use "blocks/directions-list.scss";
+@use "blocks/directions-card.scss";
+@use "blocks/button.scss";
+@use "blocks/companions.scss";
+@use "blocks/companions-list.scss";
+@use "blocks/user.scss";
+@use "blocks/avatar.scss";
+@use "blocks/level.scss";
+@use "blocks/flags-list.scss";
+@use "blocks/tags-list.scss";
+@use "blocks/transport-list.scss";
+@use "blocks/icon.scss";
+@use "blocks/tariffs.scss";
+@use "blocks/tariffs-list.scss";
+@use "blocks/feedback.scss";
+@use "blocks/link.scss";
+@use "blocks/form.scss";
+@use "blocks/input.scss";
+@use "blocks/address.scss";
+@use "blocks/map.scss";
+@use "blocks/copyright.scss";
+@use "blocks/modal.scss";
+
+/*form.html*/
+@use "blocks/profile.scss";
+@use "blocks/profile-group.scss";
+@use "blocks/transport-checkbox.scss";
+@use "blocks/plans.scss";
+@use "blocks/add-plan.scss";
+@use "blocks/steps-pagination.scss";
+@use "blocks/steps.scss";
+@use "blocks/calendar.scss";
+@use "blocks/routes-list.scss";
+@use "blocks/dropdown-country-list.scss";
+@use "blocks/alphabet.scss";
+@use "blocks/extend-list.scss";
+@use "blocks/entertainment.scss";
+
+/*catalog.html*/
+@use "blocks/country-filter.scss";
+@use "blocks/country-list.scss";
+@use "blocks/country-letter-list.scss";
+@use "blocks/filter.scss";
+@use "blocks/field-group.scss";
+@use "blocks/checkbox.scss";
+@use "blocks/range.scss";
+@use "blocks/like.scss";

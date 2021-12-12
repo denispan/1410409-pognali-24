@@ -1,0 +1,61 @@
+.section {
+  position: relative;
+  padding: 101px 25px 34px 25px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  margin-bottom: -25px;
+}
+
+.section--about {
+  background-color: #192144;
+  background-image: url("../img/bg_about-mobile.png");
+  background-repeat: no-repeat;
+  padding: 33px 60px 82px 49px;
+  z-index: 7;
+}
+
+.section--directions {
+  background-color: #edeff6;
+  z-index: 6;
+}
+
+.section--companions {
+  background: url("../img/bg_companions--smolov-back-desktop.png") top right/143px 143px no-repeat,
+              url("../img/bg_companions--rogovaya-back-desktop.png") 50px 50px/64px 71px no-repeat;
+  background-color: #192144;
+  z-index: 5;
+}
+
+.section--tariffs {
+  background-color: #E6E8F1;
+  z-index: 4;
+}
+
+.section--feedback {
+  background-color: #192144;
+  z-index: 3;
+}
+
+.section--address {
+  background-color: #FFD74B;
+  z-index: 2;
+}
+
+.section__title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  color: #FF8D30;
+}
+
+.section__text {
+  font-weight: 300;
+}
+
+.section__text--bold {
+  font-weight: 700;
+}
+
+.section__text--directions {
+  color: #444444;
+}

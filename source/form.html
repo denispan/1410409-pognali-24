@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Погнали</title>
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 <body class="page__body">
 
@@ -103,25 +104,25 @@
           <li>
             <label class="transport-checkbox">
               <input class="visually-hidden" type="checkbox" name="transport" value="plane" checked>
-              <span class="control__mark"><img src="./img/icon_plane.svg" alt="Самолет"></span>
+              <span class="transport-checkbox__mark"><img src="./img/icon_plane.svg" alt="Самолет"></span>
             </label>
           </li>
           <li>
             <label class="transport-checkbox">
               <input class="visually-hidden" type="checkbox" name="transport" value="bus" checked>
-              <span class="control__mark"><img src="./img/icon_bus.svg" alt="Автобус"></span>
+              <span class="transport-checkbox__mark"><img src="./img/icon_bus.svg" alt="Автобус"></span>
             </label>
           </li>
           <li>
             <label class="transport-checkbox">
               <input class="visually-hidden" type="checkbox" name="transport" value="bicycle">
-              <span class="control__mark"><img src="./img/icon_bicycle.svg" alt="Велосипед"></span>
+              <span class="transport-checkbox__mark"><img src="./img/icon_bicycle.svg" alt="Велосипед"></span>
             </label>
           </li>
           <li>
             <label class="transport-checkbox">
               <input class="visually-hidden" type="checkbox" name="transport" value="walk" checked>
-              <span class="control__mark"><img src="./img/icon_run.svg" alt="Пешком"></span>
+              <span class="transport-checkbox__mark"><img src="./img/icon_run.svg" alt="Пешком"></span>
             </label>
           </li>
         </ul>
@@ -159,7 +160,7 @@
           <li class="steps-pagination__item">
             <a class="steps-pagination__button" href="#step-1">
               <img class="steps-pagination__icon steps-pagination__icon--current" src="./img/icon_pagination.svg"
-                   alt="Шаг 1">
+              alt="Шаг 1">
               <span class="visually-hidden">Даты</span>
             </a>
           </li>
@@ -224,15 +225,15 @@
           <div class="calendar">
             <div class="calendar__caption">
               <h3 class="calendar__title">Март 2019</h3>
-              <button class="button-prev" type="button">
+              <button class="button button__prev" type="button">
                 <span class="visually-hidden">Месяц назад</span>
               </button>
-              <button class="button-next" type="button">
+              <button class="button button__next" type="button">
                 <span class="visually-hidden">Месяц вперед</span>
               </button>
             </div>
             <div class="calendar__body">
-              <table class="calendar">
+              <table class="calendar__table">
 
                 <tr>
                   <th>П</th>
