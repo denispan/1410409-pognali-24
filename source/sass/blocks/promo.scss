@@ -1,5 +1,5 @@
 .promo {
-  background-color: #161c35;
+  background-color: $color-blue-4;
 }
 
 .promo__slogan {
@@ -7,7 +7,7 @@
   font-size: 36px;
   padding-bottom: 245px;
   line-height: 40px;
-  color: #ffffff;
+  color: $color-white-1;
 }
 
 .promo__wrapper {
@@ -17,7 +17,7 @@
 }
 
 .promo__review {
-  background-color: #161c35;
+  background-color: $color-blue-4;
   font-size: 16px;
   line-height: 22px;
 }
@@ -32,5 +32,5 @@
 }
 
 .promo__wrapper-list {
-  background-color: #192144;
+  background-color: $color-blue-3;
 }

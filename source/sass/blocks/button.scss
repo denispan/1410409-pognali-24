@@ -1,20 +1,78 @@
 .button {
-  font-weight: 700;
-}
-
-.button--primary {
+  display: inline-block;
+  width: 100%;
+  font-family: $font-default;
   font-size: 18px;
   line-height: 18px;
-  color: #1D2E5B;
-  background-color: #FFD74B;
-}
-
-.button--secondary {
-  font-size: 16px;
-  line-height: 16px;
-  color: #132576;
-}
-
-.button--transparent {
+  font-weight: 700;
   background-color: transparent;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  text-align: center;
+
+  &--primary {
+    color: $color-blue-2;
+    background-color: $color-yellow-1;
+  }
+
+  &--secondary {
+    font-size: 16px;
+    line-height: 16px;
+    border-radius: 50px;
+    background-color: $color-yellow-1;
+    color: $color-blue-1;
+  }
+
+  &--transparent {
+    background-color: transparent;
+  }
+
+  &--simple {
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 500;
+    color: $color-black-1;
+    opacity: 0.3;
+    text-transform: uppercase;
+  }
+
+  &--inner {
+    font-size: 17px;
+    line-height: 30px;
+    color: $color-blue-2;
+    text-transform: uppercase;
+    padding: 7px;
+  }
+
+  &--grey {
+    text-transform: uppercase;
+    background-color: $color-grey-7;
+  }
+}
+
+.button__catalog {
+  font-size: 17px;
+  line-height: 17px;
+  font-weight: 700;
+  padding: 14px 73px;
+  color: $color-blue-4;
+  text-transform: uppercase;
+  border-radius: 25px;
+
+  &--primary {
+    background-color: $color-white-1;
+  }
+
+  &--secondary {
+    background-color: $color-yellow-1;
+  }
+
+  &--transparent {
+    line-height: 30px;
+  }
+
+  &--additional {
+    background-color: $color-grey-7;
+  }
 }

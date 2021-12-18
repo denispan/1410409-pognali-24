@@ -1,10 +1,23 @@
 .user__description {
-  background-color: #ffffff;
+  background-color: $color-white-1;
 }
 
-.user__name {
+.user__link {
   font-weight: 700;
   font-size: 21px;
   line-height: 21px;
-  color: #1D2E5B;
+  color: $color-blue-2;
+
+  &--catalog {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.user__text {
+  font-size: 15px;
+  line-height: 16px;
+  font-weight: 400;
+  color: $color-grey-1;
+  text-transform: lowercase;
 }

@@ -1,0 +1,34 @@
+.alphabet {
+  border-collapse: collapse;
+}
+
+.alphabet__cell {
+  width: 42px;
+  height: 42px;
+  text-align: center;
+  border: 1px solid $color-grey-5;
+
+  &--active {
+    background-color: $color-blue-2;
+    border: 1px solid $color-blue-2;
+  }
+}
+
+.alphabet-row:nth-child(1) .alphabet__cell {
+  border-top: none;
+}
+
+.alphabet__button {
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 500;
+  color: $color-blue-2;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  &--active {
+    color: $color-white-1;
+  }
+}

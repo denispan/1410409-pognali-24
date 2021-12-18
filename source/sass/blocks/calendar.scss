@@ -1,0 +1,76 @@
+.calendar {
+  margin-bottom: 22px;
+}
+
+.calendar__caption {
+  margin-bottom: 22px;
+}
+
+.calendar__title {
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 500;
+  color: $color-blue-2;
+  margin: 0;
+  padding: 0;
+}
+
+.calendar__table {
+  border-collapse: collapse;
+}
+
+.calendar__table th {
+  width: 32px;
+  height: 32px;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: $color-grey-1;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.calendar__table th:nth-child(6),
+.calendar__table th:nth-child(7) {
+  color: $color-red-1;
+}
+
+.calendar__cell {
+  width: 32px;
+  height: 32px;
+  text-align: center;
+  background-color: $color-grey-2;
+  border: 1px solid $color-grey-5;
+
+  &--disabled {
+    background-color: transparent;
+  }
+
+  &--chosen {
+    background-color: $color-blue-2;
+  }
+
+  &--active {
+    border: 2px solid $color-red-1;
+  }
+}
+
+.calendar__button {
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 500;
+  color: $color-blue-2;
+  text-align: center;
+  cursor: pointer;
+
+  &--disabled {
+    font-weight: 400;
+    opacity: 0.3;
+  }
+
+  &--chosen {
+    color: $color-white-1;
+  }
+}

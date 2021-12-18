@@ -1,0 +1,25 @@
+.plans {
+  color: $color-blue-2;
+  background-color: $color-grey-3;
+}
+
+.plans__item {
+  background-color: $color-white-1;
+
+  & + & {
+    margin-top: 10px;
+  }
+}
+
+.plans__countries {
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 700;
+}
+
+.plans__text {
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+}

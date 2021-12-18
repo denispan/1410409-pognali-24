@@ -3,12 +3,12 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-}
 
-.contacts-list__link--main-nav {
-  color: #192144;
-}
+  &--main {
+    color: $color-yellow-1;
+  }
 
-.contacts-list__link--main {
-  color: #FFD74B;
+  &--main-nav {
+    color: $color-blue-3;
+  }
 }

@@ -16,7 +16,7 @@
           <span class="visually-hidden">Открыть/закрыть меню</span>
         </button>
         <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
+          <ul class="main-nav__list site-list list-reset">
             <li class="site-list__item">
               <a href="#">О сервисе</a>
             </li>
@@ -27,10 +27,10 @@
               <a href="catalog.html">Попутчики</a>
             </li>
           </ul>
-          <div class="main-nav__list button-login">
+          <div class="button button--secondary button--login">
             <a href="#">Авторизация</a>
           </div>
-          <ul class="main-nav__list contacts-list">
+          <ul class="main-nav__list contacts-list list-reset">
             <li class="contacts-list__item">
               <a class="contacts-list__link contacts-list__link--main-nav" href="tel:88005558628">8 800 555-86-28</a>
             </li>
@@ -38,7 +38,7 @@
               <a class="contacts-list__link contacts-list__link--main-nav" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
             </li>
           </ul>
-          <ul class="main-nav__list social-list">
+          <ul class="main-nav__list social-list list-reset">
             <li class="social-list__item">
               <a class="social-list__link" href="https://www.facebook.com/htmlacademy">
                 <span class="visually-hidden">Фейсбук</span>
@@ -67,7 +67,7 @@
         <div class="promo__wrapper">
           <p class="promo__slogan">В путешествие с крутыми попутчиками!</p>
 
-          <ul class="promo__contacts-list">
+          <ul class="promo__contacts-list list-reset">
             <li class="contacts-list__item contacts-list__item--promo">
               <a class="contacts-list__link contacts-list__link--promo" href="tel:88005558628">
                 <span class="visually-hidden">Телефон: 88005558628</span>
@@ -78,11 +78,12 @@
                 <span class="visually-hidden">Почта: mail@htmlacademy.ru</span>
               </a>
             </li>
+            <li>
+              <div class="button button--secondary button--login">
+                <a href="#">Авторизация</a>
+              </div>
+            </li>
           </ul>
-
-          <div class="promo__list button-login button-login--promo">
-            <a href="#">Авторизация</a>
-          </div>
         </div>
 
         <blockquote class="promo__review">
@@ -91,7 +92,7 @@
         </blockquote>
 
         <div class="promo__wrapper-list">
-          <ol class="todo-list">
+          <ol class="todo-list list-reset">
             <li class="todo-list__item">
               <p class="todo-list__text">Выберите направление</p>
             </li>
@@ -108,7 +109,7 @@
         </div>
       </section>
 
-      <section class="section section--about">
+      <section class="section section--index section--about">
         <h2 class="section__title">О сервисе</h2>
         <p class="section__text">
           Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих.
@@ -118,12 +119,12 @@
         </p>
       </section>
 
-      <section class="section section--directions">
+      <section class="section section--index section--directions">
         <h2 class="section__title">Направления</h2>
         <p class="section__text section__text--directions">
           Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.
         </p>
-        <ul class="directions-list">
+        <ul class="directions-list list-reset">
           <li class="directions-list__item directions-card">
             <a class="directions-card__link" href="#">
               <img class="directions-card__image" src="./img/directions-card-thailand.jpg" width="270" height="110" alt="Таиланд">
@@ -161,7 +162,7 @@
         <a class="button button--primary" href="form.html">Показать все</a>
       </section>
 
-      <section class="section section--companions">
+      <section class="section section--index section--companions">
         <h2 class="section__title">Попутчики</h2>
         <p class="section__text">
           Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут для хайкинга.
@@ -169,7 +170,7 @@
         <p class="section__text section__text--bold">
           Теперь можно легко найти единомышленников!
         </p>
-        <ul class="companions-list">
+        <ul class="companions-list list-reset">
           <li class="companions-list__item user">
             <div class="user__avatar avatar">
               <a class="user__link" href="#">
@@ -192,10 +193,12 @@
                   <img class="flags-list__image" src="./img/flag-seychelles.png" width="35" height="24" alt="Хочет посетить Сейшельские Острова">
                 </li>
               </ul>
-              <a class="user__link" href="#">
-                <h3 class="user__name">Таня Фирсова</h3>
-              </a>
-              <ul class="user__tags-list tags-list">
+
+              <h3 class="user__name">
+                <a class="user__link" href="#">Таня Фирсова</a>
+              </h3>
+
+              <ul class="user__tags-list tags-list list-reset">
                 <li class="tags-list__item">#ЗОЖ</li>
                 <li class="tags-list__item">#ПП</li>
                 <li class="tags-list__item">#Фитнес</li>
@@ -203,7 +206,7 @@
                 <li class="tags-list__item">#авокадо</li>
                 <li class="tags-list__item">#смузи</li>
               </ul>
-              <ul class="user__transport-list transport-list">
+              <ul class="user__transport-list transport-list list-reset">
                 <li class="transport-list__item">
                   <img class="icon icon--satisfied" src="./img/icon_plane.svg" width="21" height="21" alt="Предпочитает самолет">
                 </li>
@@ -228,7 +231,7 @@
               </p>
             </div>
             <div class="user__description">
-              <ul class="user__flags-list flags-list">
+              <ul class="user__flags-list flags-list list-reset">
                 <li class="flags-list__item">
                   <img class="flags-list__image" src="./img/flag-belgium.png" width="35" height="24" alt="Хочет посетить Бельгию">
                 </li>
@@ -236,17 +239,17 @@
                   <img class="flags-list__image" src="./img/flag-czech.png" width="35" height="24" alt="Хочет посетить Чехию">
                 </li>
               </ul>
-              <a class="user__link" href="#">
-                <h3 class="user__name">Петя Демин</h3>
-              </a>
-              <ul class="user__tags-list tags-list">
+              <h3 class="user__name">
+                <a class="user__link" href="#">Петя Демин</a>
+              </h3>
+              <ul class="user__tags-list tags-list list-reset">
                 <li class="tags-list__item">#бургер</li>
                 <li class="tags-list__item">#бар</li>
                 <li class="tags-list__item">#футбол</li>
                 <li class="tags-list__item">#концерт</li>
                 <li class="tags-list__item">#крафт</li>
               </ul>
-              <ul class="user__transport-list transport-list">
+              <ul class="user__transport-list transport-list list-reset">
                 <li class="transport-list__item">
                   <img class="icon icon--satisfied" src="./img/icon_plane.svg" width="21" height="21" alt="Предпочитает самолет">
                 </li>
@@ -266,9 +269,9 @@
         <a class="button button--primary" href="catalog.html">Показать всех</a>
       </section>
 
-      <section class="section section--tariffs-list">
+      <section class="section section--index section--tariffs-list">
         <h2 class="section__title">Добавьте свой профиль</h2>
-        <ol class="tariffs-list">
+        <ol class="tariffs-list list-reset">
           <li class="tariffs-list__item">
             <p class="tariffs-list__description">Базовое размещение</p>
             <p class="tariffs-list__price">Бесплатно</p>
@@ -287,7 +290,7 @@
         </a>
       </section>
 
-      <section class="section section--feedback">
+      <section class="section section--index section--feedback">
         <h2 class="visually-hidden">Обратная связь</h2>
         <p class="section__title">Заинтересовались?</p>
         <p class="section__text">
@@ -304,7 +307,7 @@
         </form>
         <p class="section__text feedback--text">Остались вопросы? Мы с радостью на них ответим!</p>
 
-        <ul class="contacts-list">
+        <ul class="contacts-list list-reset">
           <li class="contacts-list__item">
             <a class="contacts-list__link contacts-list__link--main" href="tel:88005558628">8 800 555-86-28</a>
           </li>
@@ -314,7 +317,7 @@
         </ul>
       </section>
 
-      <section class="section section--address">
+      <section class="section section--index section--address">
         <h2 class="visually-hidden">Адрес</h2>
         <p class="section__text">ул. Большая Конюшенная, 19/8</p>
         <a class="button button--primary button--transparent" href="https://yandex.ru/maps/20728/korolev/?ll=37.835139%2C55.927007&mode=routes&rtext=55.921754%2C37.814497~55.921657%2C37.841362&rtt=auto&ruri=~&utm_source=main_stripe_big&z=14">Проложить маршрут</a>
@@ -334,7 +337,7 @@
         <img src="./img/footer-logo_mobile.svg" width="96" height="15" alt="Логотип сайта Погнали">
       </a>
 
-      <ul class="social-list social-list--footer">
+      <ul class="social-list social-list--footer list-reset">
         <li class="social-list__item">
           <a href="https://www.facebook.com/htmlacademy">
             <span class="visually-hidden">Фейсбук</span>
@@ -363,7 +366,7 @@
 
     <section class="modal">
         <h2 class="modal__title section__title">Бизнес-тарифы</h2>
-        <ul class="modal__list tariffs-list">
+        <ul class="modal__list tariffs-list list-reset">
           <li class="tariffs__item">
             <p class="tariffs__description">Реклама у блоггера</p>
             <p class="tariffs__price">300 000 руб./пост</p>
@@ -381,7 +384,7 @@
             <p class="tariffs__price">Индивидуально</p>
           </li>
         </ul>
-        <button class="modal__close" type="button">
+        <button class="button modal__close" type="button">
           Закрыть окно
         </button>
       </section>

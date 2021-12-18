@@ -1,0 +1,20 @@
+.country-filter__title {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
+  color: $color-blue-3;
+  text-transform: uppercase;
+}
+
+.country-list__link {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
+  color: $color-blue-3;
+  opacity: 0.3;
+  text-transform: uppercase;
+
+  &--active {
+    opacity: 1;
+  }
+}

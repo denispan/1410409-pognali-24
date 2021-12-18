@@ -1,0 +1,11 @@
+.input__label {
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 500;
+  color: $color-blue-2;
+  text-transform: uppercase;
+
+  &--opacity {
+    opacity: 0.3;
+  }
+}

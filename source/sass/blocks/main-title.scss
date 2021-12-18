@@ -1,0 +1,18 @@
+.main-title {
+  color: $color-white-1;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 700;
+  padding: 60px 0 12px 25px;
+
+  &--wrapper-common {
+    background-color: $color-yellow-1;
+    padding-bottom: 4px;
+  }
+
+  &--wrapper {
+    background-color: $color-blue-4;
+
+    @include border-radius-bottom(25px);
+  }
+}
