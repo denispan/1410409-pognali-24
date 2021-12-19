@@ -7,12 +7,3 @@
   border-bottom-right-radius: $radius;
   border-bottom-left-radius: $radius;
 }
-
-
-@mixin generate-colors($color, $n) {
-  @for $i from 1 to ($n + 1) {
-    &:nth-child(#{$i}n) {
-      background-color: adjust-hue($color, (($i - 1) * 15));
-    }
-  }
-}

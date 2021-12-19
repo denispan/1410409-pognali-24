@@ -6,5 +6,19 @@
 }
 
 .todo-list__item {
-  @include generate-colors($color-yellow-4, 4);
+  &:nth-child(n) {
+    background-color: $color-yellow-4;
+  }
+
+  &:nth-child(2n) {
+    background-color: $color-yellow-3;
+  }
+
+  &:nth-child(3n) {
+    background-color: $color-yellow-2;
+  }
+
+  &:nth-child(4n) {
+    background-color: $color-yellow-1;
+  }
 }
