@@ -8,7 +8,6 @@
     display: grid;                           // грид, чтобы при добавлении контента не ломался
     grid-template-columns: repeat(2, 1fr);
   }
-
 }
 
 .promo__slogan {
@@ -37,4 +36,3 @@
   font-weight: 700;
   font-style: normal;
 }
-

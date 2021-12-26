@@ -1,3 +1,9 @@
+.address {
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
+}
+
 .address__text {
   font-size: 16px;
   line-height: 22px;

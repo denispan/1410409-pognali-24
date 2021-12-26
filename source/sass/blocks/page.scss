@@ -20,6 +20,11 @@
   @include border-radius-top(25px);
   margin-top: -25px;
   z-index: 10;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .page__main-catalog-content {

@@ -43,6 +43,7 @@
 
   &--form {
     padding: 30px 25px 55px 25px;
+
     @include border-radius-top(25px);
     margin-top: -25px;
   }
@@ -74,5 +75,4 @@
   &--bold {
     font-weight: 700;
   }
-
 }
