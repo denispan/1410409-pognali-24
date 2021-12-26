@@ -2,62 +2,63 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Погнали</title>
     <link rel="stylesheet" href="./css/style.css">
   </head>
   <body class="page__body">
 
     <header class="page__header">
-      <a class="logo logo--header" href="index.html">
-        <img src="./img/header-logo_mobile.svg" width="96" height="15" alt="Логотип сайта Погнали">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть/закрыть меню</span>
-        </button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list list-reset">
-            <li class="site-list__item">
-              <a href="#">О сервисе</a>
-            </li>
-            <li class="site-list__item">
-              <a href="form.html">Направления</a>
-            </li>
-            <li class="site-list__item">
-              <a href="catalog.html">Попутчики</a>
-            </li>
-          </ul>
-          <div class="button button--secondary button--login">
-            <a href="#">Авторизация</a>
-          </div>
-          <ul class="main-nav__list contacts-list list-reset">
-            <li class="contacts-list__item">
-              <a class="contacts-list__link contacts-list__link--main-nav" href="tel:88005558628">8 800 555-86-28</a>
-            </li>
-            <li class="contacts-list__item">
-              <a class="contacts-list__link contacts-list__link--main-nav" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-            </li>
-          </ul>
-          <ul class="main-nav__list social-list list-reset">
-            <li class="social-list__item">
-              <a class="social-list__link" href="https://www.facebook.com/htmlacademy">
-                <span class="visually-hidden">Фейсбук</span>
-              </a>
-            </li>
-            <li class="social-list__item">
-              <a class="social-list__link" href="https://vk.com/htmlacademy">
-                <span class="visually-hidden">ВКонтакте</span>
-              </a>
-            </li>
-            <li class="social-list__item">
-              <a class="social-list__link" href="https://www.instagram.com/htmlacademy/">
-                <span class="visually-hidden">Инстаграм</span>
-              </a>
-            </li>
-          </ul>
+    <a class="logo logo--header" href="index.html">
+      <img src="./img/header-logo_mobile.svg" width="96" height="15" alt="Логотип сайта Погнали">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть/закрыть меню</span>
+      </button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list list-reset">
+          <li class="site-list__item">
+            <a href="#">О сервисе</a>
+          </li>
+          <li class="site-list__item">
+            <a href="form.html">Направления</a>
+          </li>
+          <li class="site-list__item">
+            <a href="catalog.html">Попутчики</a>
+          </li>
+        </ul>
+        <div class="button button--secondary button--login">
+          <a href="#">Авторизация</a>
         </div>
-      </nav>
-    </header>
+        <ul class="main-nav__list contacts list-reset">
+          <li class="contacts__item">
+            <a class="contacts__link contacts__link--main-nav" href="tel:88005558628">8 800 555-86-28</a>
+          </li>
+          <li class="contacts__item">
+            <a class="contacts__link contacts__link--main-nav" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </li>
+        </ul>
+        <ul class="main-nav__list social-list list-reset">
+          <li class="social-list__item">
+            <a class="social-list__link" href="https://www.facebook.com/htmlacademy">
+              <span class="visually-hidden">Фейсбук</span>
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__link" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">ВКонтакте</span>
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__link" href="https://www.instagram.com/htmlacademy/">
+              <span class="visually-hidden">Инстаграм</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
 
     <main class="page__main">
       <div class="main-title--wrapper-common">
@@ -82,10 +83,10 @@
           </a>
 
           <div class="profile__input">
-            <label class="button button--input" for="avatar">
+            <label class="button button--primary profile__button" for="avatar">
               Сменить фото
             </label>
-            <input class="profile__input" type="file" name="new-image__avatar" id="avatar">
+            <input class="visually-hidden" type="file" name="new-image__avatar" id="avatar">
           </div>
 
           <fieldset class="profile-group">
@@ -141,13 +142,13 @@
             <p class="plans__countries">Франция, Италия</p>
             <p class="plans__text">3 попутчика</p>
             <p class="plans__text">26 мар — 29 мар</p>
-            <a class="button button--simple" href="#">Изменить</a>
+            <a class="button plans__button" href="#">Изменить</a>
           </li>
           <li class="plans__item">
             <p class="plans__countries">Таиланд, Индонезия</p>
             <p class="plans__text">1 попутчик</p>
             <p class="plans__text">1 июл — 15 июл</p>
-            <a class="button button--simple" href="#">Изменить</a>
+            <a class="button plans__button" href="#">Изменить</a>
           </li>
         </ol>
       </section>
@@ -389,7 +390,7 @@
                 </div>
               </div>
 
-              <a class="button button--secondary button--inner" href="#step-2">
+              <a class="button button--primary steps__button" href="#step-2">
                 Следующий шаг
               </a>
             </li>
@@ -572,10 +573,10 @@
                 <button class="button routes-list__button" type="button">Добавить страну</button>
               </div>
 
-              <a class="button button--secondary button--inner" href="#step-3">
+              <a class="button button--primary steps__button" href="#step-3">
                 Следующий шаг
               </a>
-              <a class="button button--transparent button--inner" href="#step-1">
+              <a class="button button--primary button--transparent steps__button" href="#step-1">
                 На шаг назад
               </a>
 
@@ -620,11 +621,11 @@
 
               </div>
 
-              <button class="button button--secondary button--inner" type="submit">
+              <button class="button button--primary steps__button" type="submit">
                 Отправить
               </button>
 
-              <a class="button button--transparent button--inner" href="#step-2">
+              <a class="button button--primary button--transparent steps__button" href="#step-2">
                 На шаг назад
               </a>
 

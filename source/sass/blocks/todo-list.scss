@@ -1,11 +1,25 @@
 .todo-list {
+  counter-reset: num;
   font-weight: 700;
   font-size: 18px;
   line-height: 18px;
   color: $color-blue-4;
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / -1;
+  }
 }
 
 .todo-list__item {
+  padding: 24px 22px;
+  border-radius: 10px;
+  margin-bottom: -10px;
+  &::before {
+    content: counter(num);
+    counter-increment: num;
+    color: $color-white-1;
+  }
+
   &:nth-child(n) {
     background-color: $color-yellow-4;
   }
@@ -21,4 +35,9 @@
   &:nth-child(4n) {
     background-color: $color-yellow-1;
   }
+}
+
+.todo-list__text {
+  margin: 0;
+  padding: 0;
 }

@@ -1,0 +1,24 @@
+.companions {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.companions__button {
+
+  &--mobile {
+
+    @media (min-width: $mobile-tablet-width-only) {
+      display: none;
+    }
+  }
+
+  &--desktop {
+    display: none;
+
+    @media (min-width: $desktop-width) {
+      display: block;
+    }
+  }
+}

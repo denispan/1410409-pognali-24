@@ -1,5 +1,14 @@
 .promo {
+  display: flex;
+  flex-direction: column;
   background-color: $color-blue-4;
+  color: $color-white-1;
+
+  @media (min-width: $desktop-width) {
+    display: grid;                           // грид, чтобы при добавлении контента не ломался
+    grid-template-columns: repeat(2, 1fr);
+  }
+
 }
 
 .promo__slogan {
@@ -7,20 +16,18 @@
   font-size: 36px;
   padding-bottom: 245px;
   line-height: 40px;
-  color: $color-white-1;
-}
-
-.promo__wrapper {
-  padding-top: 21px;
-  background-image: url("../img/bg_promo.jpg");
-  background-repeat: no-repeat;
 }
 
 .promo__review {
-  background-color: $color-blue-4;
   font-size: 16px;
   line-height: 22px;
 }
+
+//.promo__wrapper {
+//  padding-top: 21px;
+//  background-image: url("../img/bg_promo.jpg");
+//  background-repeat: no-repeat;
+//}
 
 .promo__quote {
   font-weight: 300;
@@ -31,6 +38,3 @@
   font-style: normal;
 }
 
-.promo__wrapper-list {
-  background-color: $color-blue-3;
-}

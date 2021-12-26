@@ -7,48 +7,49 @@
 @import "global/list-reset.scss";
 
 /*index.html*/
+@import "blocks/button.scss";
 @import "blocks/page.scss";
 @import "blocks/logo.scss";
 @import "blocks/main-nav.scss";
 @import "blocks/site-list.scss";
+@import "blocks/contacts.scss";
 @import "blocks/contacts-list.scss";
-@import "blocks/social-list.scss";
+//@import "blocks/social-list.scss";
 @import "blocks/promo.scss";
 @import "blocks/todo-list.scss";
 @import "blocks/section.scss";
 @import "blocks/about.scss";
 @import "blocks/directions.scss";
-@import "blocks/directions-list.scss";
+//@import "blocks/directions-list.scss";
 @import "blocks/directions-card.scss";
-@import "blocks/button.scss";
 @import "blocks/companions.scss";
 @import "blocks/companions-list.scss";
 @import "blocks/user.scss";
-@import "blocks/avatar.scss";
+//@import "blocks/avatar.scss";
 @import "blocks/level.scss";
 @import "blocks/flags-list.scss";
 @import "blocks/tags-list.scss";
-@import "blocks/transport-list.scss";
-@import "blocks/icon.scss";
-@import "blocks/tariffs.scss";
+//@import "blocks/transport-list.scss";
+//@import "blocks/icon.scss";
+//@import "blocks/tariffs.scss";
 @import "blocks/tariffs-list.scss";
-@import "blocks/feedback.scss";
+//@import "blocks/feedback.scss";
 @import "blocks/link.scss";
-@import "blocks/form.scss";
+//@import "blocks/form.scss";
 @import "blocks/input.scss";
 @import "blocks/address.scss";
-@import "blocks/map.scss";
+//@import "blocks/map.scss";
 @import "blocks/copyright.scss";
 @import "blocks/modal.scss";
 
 /*form.html*/
 @import "blocks/profile.scss";
 @import "blocks/main-title.scss";
-@import "blocks/profile-group.scss";
-@import "blocks/transport-checkbox.scss";
+//@import "blocks/profile-group.scss";
+//@import "blocks/transport-checkbox.scss";
 @import "blocks/plans.scss";
 @import "blocks/add-plan.scss";
-@import "blocks/steps-pagination.scss";
+//@import "blocks/steps-pagination.scss";
 @import "blocks/steps.scss";
 @import "blocks/control.scss";
 @import "blocks/calendar.scss";
@@ -60,10 +61,10 @@
 
 /*catalog.html*/
 @import "blocks/country-filter.scss";
-@import "blocks/country-list.scss";
-@import "blocks/country-letter-list.scss";
+//@import "blocks/country-list.scss";
+//@import "blocks/country-letter-list.scss";
 @import "blocks/filter.scss";
 @import "blocks/field-group.scss";
 @import "blocks/checkbox.scss";
-@import "blocks/range.scss";
+//@import "blocks/range.scss";
 @import "blocks/like.scss";

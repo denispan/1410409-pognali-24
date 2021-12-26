@@ -1,0 +1,19 @@
+.directions {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    &__list {
+      order: -1;
+      grid-row: span 3;
+    }
+  }
+}
+
+.directions__title {
+  height: 25%;
+}
+
+.directions__text {
+  color: $color-grey-1;
+}

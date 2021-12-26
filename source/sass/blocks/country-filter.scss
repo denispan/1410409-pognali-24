@@ -18,3 +18,12 @@
     opacity: 1;
   }
 }
+
+.country-filter__button {
+  font-size: 16px;
+  line-height: 20px;
+  border-radius: 20px;
+  color: $color-blue-3;
+  background-color: $color-grey-7;
+  text-transform: uppercase;
+}
