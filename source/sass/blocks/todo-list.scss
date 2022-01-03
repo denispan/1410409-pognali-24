@@ -1,44 +1,145 @@
 .todo-list {
   counter-reset: num;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 18px;
   color: $color-blue-4;
 
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
   @media (min-width: $desktop-width) {
-    grid-column: 1 / -1;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
 
 .todo-list__item {
-  padding: 24px 22px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  min-height: 100px;
+  padding: 22px 21px 0 24px;
   border-radius: 10px;
-  margin-bottom: -10px;
+  margin-bottom: -20px;
+  display: flex;
+  justify-content: space-between;
 
-  &::before {
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+    justify-content: start;
+    font-size: 24px;
+    line-height: 24px;
+    min-height: 140px;
+    padding: 31px 0 22px 33px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+    padding: 30px 62px 30px 34px;
+  }
+
+  &:last-child {
+    min-height: 80px;
+  }
+
+  &::after {
     content: counter(num);
     counter-increment: num;
     color: $color-white-1;
+
+    @media (min-width: $tablet-width) {
+      font-size: 30px;
+      line-height: 30px;
+    }
+
+    @media (min-width: $desktop-width) {
+      font-size: 24px;
+      line-height: 24px;
+      align-self: start;
+    }
   }
 
   &:nth-child(n) {
     background-color: $color-yellow-4;
+
+    @media (min-width: $tablet-width) {
+      min-width: 384px;
+      @include border-radius-top(20px);
+      @include border-radius-bottom(0);
+    }
+
+    @media (min-width: $desktop-width) {
+      min-width: 355px;
+      border-radius: 20px;
+    }
   }
 
   &:nth-child(2n) {
     background-color: $color-yellow-3;
+
+    @media (min-width: $tablet-width) {
+      min-width: 344px;
+      margin-left: -40px;
+      @include border-radius-top(20px);
+      @include border-radius-bottom(0);
+    }
+
+    @media (min-width: $desktop-width) {
+      min-width: 355px;
+      margin-left: -40px;
+      border-radius: 20px;
+    }
   }
 
   &:nth-child(3n) {
     background-color: $color-yellow-2;
+
+    @media (min-width: $tablet-width) {
+      min-width: 384px;
+      @include border-radius-top(0);
+      @include border-radius-bottom(20px);
+    }
+
+    @media (min-width: $desktop-width) {
+      min-width: 355px;
+      margin-left: -40px;
+      border-radius: 20px;
+    }
   }
 
   &:nth-child(4n) {
     background-color: $color-yellow-1;
+
+    @media (min-width: $tablet-width) {
+      min-width: 344px;
+      @include border-radius-top(0);
+      @include border-radius-bottom(20px);
+    }
+
+    @media (min-width: $desktop-width) {
+      min-width: 315px;
+      margin-left: -40px;
+      border-radius: 20px;
+      padding-right: 33px;
+    }
   }
 }
 
 .todo-list__text {
   margin: 0;
   padding: 0;
+  width: 150px;
+
+  @media (min-width: $tablet-width) {
+    width: 210px;
+    margin-bottom: 10px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 200px;
+  }
 }

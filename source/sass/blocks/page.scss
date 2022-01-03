@@ -5,12 +5,21 @@
   line-height: 22px;
   font-weight: 300;
   color: $color-grey-1;
+  margin: 0;
 }
 
 .page__header {
   display: flex;
   background-color: $color-blue-4;
-  padding: 27px 31px;
+  padding: 19px 25px 60px 25px;
+
+  @media (min-width: $tablet-width) {
+    padding: 40px 40px 72px 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 60px 46px 11px 60px;
+  }
 }
 
 .page__footer {

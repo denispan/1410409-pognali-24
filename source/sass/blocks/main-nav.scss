@@ -1,3 +1,24 @@
 .main-nav {
-  background-color: $color-white-1;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+  }
+}
+
+.main-nav__toggle {
+  width: 25px;
+  margin: auto 0;
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+
+.main-nav__login {
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
 }

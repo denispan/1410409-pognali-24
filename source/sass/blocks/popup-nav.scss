@@ -1,0 +1,66 @@
+.popup-nav {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+}
+
+.popup-nav__list {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    column-gap: 33px;
+  }
+}
+
+.popup-nav__login {
+  @media (min-width: $tablet-width) {
+    display: block;
+    width: 150px;
+  }
+}
+
+.popup-nav__contacts {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.popup-nav__contacts-wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: end;
+  }
+}
+
+.popup-nav__social-list {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.popup-nav__item a {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 35px;
+  color: $color-blue-3;
+  text-transform: uppercase;
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 25px;
+    color: $color-white-1;
+  }
+}

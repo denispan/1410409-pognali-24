@@ -3,6 +3,10 @@
 }
 
 .modal__close {
+  display: none;
+}
+
+.modal__button-close {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
